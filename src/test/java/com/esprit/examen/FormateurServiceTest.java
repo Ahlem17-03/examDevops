@@ -38,8 +38,8 @@ private static final Logger l = LogManager.getLogger(FormateurServiceTest.class)
 	
 	@Test
 	public void addFormateur() {
-		Formateur formateur = new Formateur("salma", "mezn", Poste.Docteur, Contrat.CIVP,
-				"meznsalma@gmail.com", "123");	
+		Formateur formateur = new Formateur("kthiri", "ahlem", Poste.Docteur, Contrat.CIVP,
+				"ahlem.kthiri@gmail.com", "123");	
 
 		Long id = formateurService.addFormateur(formateur);
 		
@@ -134,7 +134,7 @@ private static final Logger l = LogManager.getLogger(FormateurServiceTest.class)
 	
 	@Test
     public void testnombreCoursParFormateur() {
-        Formateur f = new Formateur("chiraz","demni", Poste.Ingénieur, Contrat.EXPERT,"chiraz@gmail.com","ssssssss");
+        Formateur f = new Formateur("kthiri","ahlem", Poste.Ingénieur, Contrat.EXPERT,"ahlem.kthiri@gmail.com","ssssssss");
         Long  idf = formateurService.addFormateur(f);
 
         Cours c = new Cours("description" , TypeCours.Informatique,"DevoOps");
